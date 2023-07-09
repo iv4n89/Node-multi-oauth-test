@@ -39,6 +39,13 @@ export const ME_URLS = {
     facebook: ''
 };
 
+export const CALLBACKS = {
+  twitter: '',
+  google: `http://localhost:${SERVER_PORT!}/auth/google/callback`,
+  microsoft: '',
+  facebook: '',
+};
+
 export const prisma = new PrismaClient();
 
 type OauthTypeUser = "twitter" | "google" | "microsoft" | "facebook" | "local";
